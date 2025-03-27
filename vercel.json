@@ -5,7 +5,7 @@
       "memory": 1024,
       "maxDuration": 10,
       "config": {
-        "phpVersion": "8.0"  // Try switching to 8.0 if 8.1 is causing issues
+        "phpVersion": "8.0"  
       }
     }
   },
