@@ -6,7 +6,7 @@ return [
      */
     \Core\Auth\AuthManager::NAME => [
 
-        'failed' => ':email atau :password salah.',
+        'failed' => ':email or :password is incorrect.',
     ],
 
     /**
@@ -14,15 +14,15 @@ return [
      */
     \Core\Support\Time::NAME => [
 
-        'y' => 'tahun',
-        'm' => 'bulan',
-        'd' => 'hari',
-        'h' => 'jam',
-        'i' => 'menit',
-        's' => 'detik',
+        'y' => 'year',
+        'm' => 'month',
+        'd' => 'day',
+        'h' => 'hour',
+        'i' => 'minute',
+        's' => 'second',
 
-        'ago' => 'yang lalu.',
-        'recently' => 'baru saja.',
+        'ago' => 'ago.',
+        'recently' => 'just now.',
     ],
 
     /**
@@ -31,27 +31,27 @@ return [
     \Core\Valid\Validator::NAME => [
 
         'request' => [
-            'required' => ':field dibutuhkan!.',
-            'email' => ':field tidak valid!.',
-            'dns' => ':field tidak valid!.',
-            'url' => ':field tidak valid!.',
-            'uuid' => ':field bukan uuid!.',
-            'int' => ':field harus angka!.',
-            'float' => ':field harus desimal!.',
-            'min' => ':field panjang minimal: :attribute',
-            'max' => ':field panjang maxsimal: :attribute',
-            'sama' => ':field tidak sama dengan :attribute',
-            'unik' => ':field sudah ada!.',
+            'required' => ':field is required!.',
+            'email' => ':field is invalid!.',
+            'dns' => ':field is invalid!.',
+            'url' => ':field is invalid!.',
+            'uuid' => ':field is not a UUID!.',
+            'int' => ':field must be a number!.',
+            'float' => ':field must be a decimal!.',
+            'min' => ':field minimum length: :attribute',
+            'max' => ':field maximum length: :attribute',
+            'same' => ':field is not the same as :attribute',
+            'unique' => ':field already exists!.',
         ],
 
         'file' => [
-            'required' => ':field dibutuhkan!.',
-            'min' => ':field panjang minimal: :attribute',
-            'max' => ':field panjang maxsimal: :attribute',
-            'mimetypes' => ':field diperbolehkan: :attribute',
-            'mimes' => ':field diperbolehkan: :attribute',
-            'unsafe' => ':field terindikasi tidak aman!.',
-            'corrupt' => ':field tidak terupload dengan benar!.',
+            'required' => ':field is required!.',
+            'min' => ':field minimum length: :attribute',
+            'max' => ':field maximum length: :attribute',
+            'mimetypes' => ':field allowed types: :attribute',
+            'mimes' => ':field allowed types: :attribute',
+            'unsafe' => ':field is suspected to be unsafe!.',
+            'corrupt' => ':field was not uploaded correctly!.',
         ],
     ]
 ];
